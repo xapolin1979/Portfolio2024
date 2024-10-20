@@ -1,4 +1,4 @@
-
+gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".textTitle1", {
     x: -600,
