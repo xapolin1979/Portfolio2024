@@ -1,0 +1,319 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  background-color: rgb(17, 17, 17);
+}
+
+body {
+  background-color: rgb(17, 17, 17);
+}
+.textNav {
+  color: rgb(119, 119, 119);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  cursor: crosshair;
+  z-index: 5;
+  margin: 5px;
+}
+.textNav:hover {
+  color: rgb(232, 226, 218);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin: 5px;
+}
+.btnNav {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 2px solid rgb(119, 119, 119);
+  color: rgb(119, 119, 119);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.9em;
+  background-image: linear-gradient(
+    to top,
+    rgb(203, 69, 12) 50%,
+    rgb(17, 17, 17) 50%
+  );
+  background-size: 100% 300%;
+  background-position: 0 0;
+  cursor: pointer;
+  z-index: 5;
+  transition: background-position 0.5s ease, border-color 0.5s ease,
+    color 0.5s ease;
+  margin: 5px;
+}
+
+.btnNav:hover {
+  border: 2px solid rgb(17, 17, 17); /* Cambia el color del borde a negro */
+  background-color: rgb(203, 69, 12); /* Añade un fondo sólido */
+  background-position: 0 100%; /* Mueve el fondo hacia arriba para mostrar el color */
+  color: rgb(17, 17, 17); /* Cambia el color del texto a negro */
+}
+
+/*SECCION1*/
+#Seccion1 {
+  background-color: rgb(17, 17, 17);
+  overflow: hidden;
+}
+.textTitle1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  color: rgb(119, 119, 119);
+  font-size: 30rem;
+  letter-spacing: -10px;
+  line-height: 0.9;
+}
+.textTitle2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  color: rgb(119, 119, 119);
+  font-size: 30rem;
+  letter-spacing: -10px;
+  line-height: 0.9;
+}
+#guionEnd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.guion {
+  width: 30%;
+  height: 30px;
+  background-color: rgb(119, 119, 119);
+}
+
+/*SECCION2*/
+#Seccion2 {
+  background-color: rgb(17, 17, 17);
+}
+.textTitle3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 30rem;
+  letter-spacing: -10px;
+  color: rgb(203, 69, 12);
+  line-height: 0.9;
+  word-wrap: break-word; /* Para IE y versiones anteriores de navegadores */
+  overflow-wrap: break-word; /* Para navegadores modernos */
+}
+
+#scrollDown {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#scrollDown p {
+  color: rgb(119, 119, 119);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.flecha {
+  width: 20px;
+}
+
+/*SECCION3*/
+
+#Seccion3 {
+  
+  margin-top: 50px;
+  padding: 50px;
+  position: relative; 
+  border-top: none; 
+  overflow: hidden;
+}
+#Seccion3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%; /* Comienza en el centro */
+  transform: translateX(-50%); /* Centra el pseudo-elemento horizontalmente */
+  width: 95%; /* Ajusta el tamaño del borde en el centro */
+  border-top: 2px solid rgb(119, 119, 119); /* Color y grosor del borde */
+}
+.img1Seccion3 {
+  margin-left: 1000px;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-image: url(./img/bloque2.1.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.img1Seccion3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 42, 39, 0.3);
+  z-index: 1;
+}
+
+.textoSeccion3{
+  margin-left: -1000px;
+  width: 100%;
+  height: auto;
+ font-size: 1.3rem;
+ font-family: "Open Sans", sans-serif;
+ font-weight: 400;
+ color: rgb(119, 119, 119);
+ margin-top: 20px;
+
+
+}
+.sombreMi{
+font-family: "Bebas Neue", sans-serif;
+font-weight: 400;
+font-size: 4rem;
+color:  rgb(203, 69, 12);
+}
+
+
+
+
+
+
+
+
+
+/*SECCION4*/
+#Seccion4{
+  position: relative; 
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+/* #Seccion4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 95%; 
+  border-top: 2px solid rgb(119, 119, 119);
+} */
+
+.skills{
+  width: 95vw;
+  height: auto;
+ padding: 20px;
+
+}
+.title-with-line {
+  display: flex;
+  align-items: flex-end; /* Alinea el contenido hacia la parte inferior */
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  color:  rgb(203, 69, 12);
+  font-size: 4rem; /* Ajusta el tamaño del texto si es necesario */
+
+}
+
+.title-with-line::after {
+  content: "";
+  flex: 1;
+  height: 2px; /* Grosor de la línea */
+  background-color: rgb(203, 69, 12); /* Color de la línea */
+  margin-left: 10px; /* Espacio entre el texto y la línea */
+  position: relative;
+  bottom: 5px; /* Ajusta esta propiedad para alinear la línea con la parte inferior del texto */
+}
+.containerSkills{
+  width: 100%;
+  height: auto;
+  border:1px solid red;
+display: flex;
+justify-content: end;
+align-items: center;
+}
+.logosSkills{
+  width: 80%;
+  height: 70vh;
+  border:1px solid red;
+}
+
+/*SECCION5*/
+#Seccion5{
+ height: 100vh;
+ border:2px solid red;
+}
+
+@media (max-width: 1900px) {
+  .textTitle1 {
+    font-size: 23rem; /* Ajusta según lo que necesites */
+    letter-spacing: -2px; /* Ajusta si es necesario */
+  }
+  .textTitle2 {
+    font-size: 23rem; /* Ajusta según lo que necesites */
+    letter-spacing: -2px; /* Ajusta si es necesario */
+  }
+  .textTitle3 {
+    font-size: 23rem; /* Ajusta según lo que necesites */
+    letter-spacing: -2px; /* Ajusta si es necesario */
+  }
+}
+@media (max-width: 1515px) {
+  .textTitle1 {
+    font-size: 11rem; /* Ajusta según lo que necesites */
+    letter-spacing: -2px; /* Ajusta si es necesario */
+  }
+  .textTitle2 {
+    font-size: 11rem; /* Ajusta según lo que necesites */
+    letter-spacing: -2px; /* Ajusta si es necesario */
+  }
+  .textTitle3 {
+    font-size: 11rem; /* Ajusta según lo que necesites */
+    letter-spacing: -2px; /* Ajusta si es necesario */
+  }
+  #scrollDown p {
+    color: rgb(232, 226, 218);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .guion {
+    width: 30%;
+    height: 20px;
+  }
+  .img1Seccion3 {
+  
+    margin-left: 1000px;
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    background-image: url(./img/bloque2.1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .textoSeccion3{
+   font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .guion {
+    width: 60%;
+    height: 20px;
+  }
+}
