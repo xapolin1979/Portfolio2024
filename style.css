@@ -128,20 +128,12 @@ body {
   border-top: none; 
   overflow: hidden;
 }
-#Seccion3::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%; /* Comienza en el centro */
-  transform: translateX(-50%); /* Centra el pseudo-elemento horizontalmente */
-  width: 95%; /* Ajusta el tamaño del borde en el centro */
-  border-top: 2px solid rgb(119, 119, 119); /* Color y grosor del borde */
-}
+
 .img1Seccion3 {
   margin-left: 1000px;
   position: relative;
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   background-image: url(./img/bloque2.1.jpg);
   background-size: cover;
   background-position: center;
@@ -157,7 +149,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(46, 42, 39, 0.3);
+  background-color: rgba(46, 42, 39, 0.5);
   z-index: 1;
 }
 
@@ -181,13 +173,21 @@ color:  rgb(203, 69, 12);
 }
 
 
+.logosSkills img{
+  width: 500px;
+  height: 500px;
+}
 
-
-
-
-
-
-
+.descarga{
+  width: 35%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.descarga img{
+  cursor: pointer;
+}
 /*SECCION4*/
 #Seccion4{
   position: relative; 
@@ -199,15 +199,6 @@ color:  rgb(203, 69, 12);
  
 }
 
-/* #Seccion4::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%); 
-  width: 95%; 
-  border-top: 2px solid rgb(119, 119, 119);
-} */
 
 .skills{
   width: 95vw;
@@ -234,24 +225,30 @@ color:  rgb(203, 69, 12);
   position: relative;
   bottom: 5px; /* Ajusta esta propiedad para alinear la línea con la parte inferior del texto */
 }
-.containerSkills{
-  width: 100%;
-  height: auto;
-  border:1px solid red;
-display: flex;
-justify-content: end;
-align-items: center;
-}
+
 .logosSkills{
-  width: 80%;
-  height: 70vh;
-  border:1px solid red;
+  width: 100%;
+  overflow: hidden;
+ 
+}
+.scroll_logos{
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+.scroll_logos img{
+  width: 100px;
+  height: 100px;
+  flex: 0 0 auto;
+  margin-right: 30px;
 }
 
 /*SECCION5*/
 #Seccion5{
  height: 100vh;
- border:2px solid red;
+/*  border:2px solid red; */
 }
 
 @media (max-width: 1900px) {
@@ -315,5 +312,12 @@ align-items: center;
   .guion {
     width: 60%;
     height: 20px;
+  }
+  .descarga{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }

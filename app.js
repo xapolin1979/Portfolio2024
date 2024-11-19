@@ -79,3 +79,20 @@ gsap.to(".textTitle1", {
         }
       );
       
+      const container = document.querySelector('.scroll_logos');
+      const images = gsap.utils.toArray('.scroll_logos img');
+      
+      // Duplicar las imágenes para permitir un desplazamiento infinito
+      const clone = container.innerHTML;
+      container.innerHTML += clone;
+      
+      gsap.to(container, {
+        x: `-=${container.scrollWidth / 2}`, // Desplaza la mitad del contenedor (la primera copia)
+        duration: 20, // Ajusta la duración del ciclo
+        ease: "none", // Movimiento constante
+        repeat: -1, // Repetición infinita
+        modifiers: {
+          xPercent: gsap.utils.wrap(-100 * images.length, 0) // Conecta el final con el inicio
+        }
+
+      });
