@@ -179,7 +179,7 @@ color:  rgb(203, 69, 12);
 }
 
 .descarga{
-  width: 35%;
+  width: 30%;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -220,7 +220,7 @@ color:  rgb(203, 69, 12);
   content: "";
   flex: 1;
   height: 2px; /* Grosor de la línea */
-  background-color: rgb(203, 69, 12); /* Color de la línea */
+  background-color: rgb(119, 119, 119); /* Color de la línea */
   margin-left: 10px; /* Espacio entre el texto y la línea */
   position: relative;
   bottom: 5px; /* Ajusta esta propiedad para alinear la línea con la parte inferior del texto */
@@ -228,29 +228,52 @@ color:  rgb(203, 69, 12);
 
 .logosSkills{
   width: 100%;
+  height: 20vh;
   overflow: hidden;
- 
+display: flex;
+justify-content: center;
+align-items: center;
 }
+
 .scroll_logos{
   width: 100%;
   display: flex;
-  margin-top: 50px;
-  margin-bottom: 50px;
 
 }
 .scroll_logos img{
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   flex: 0 0 auto;
-  margin-right: 30px;
+  margin: 20px;
 }
 
 /*SECCION5*/
 #Seccion5{
- height: 100vh;
+ height: auto;
 /*  border:2px solid red; */
 }
 
+.project{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.textTitle4 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  color: rgb(119, 119, 119);
+  font-size: 30rem;
+  letter-spacing: -10px;
+  line-height: 0.9;
+ 
+}
+/*SECCION6*/
+#Seccion6{
+  height: 100vh;
+ /*  border:2px solid red; */
+ }
 @media (max-width: 1900px) {
   .textTitle1 {
     font-size: 23rem; /* Ajusta según lo que necesites */
@@ -264,6 +287,11 @@ color:  rgb(203, 69, 12);
     font-size: 23rem; /* Ajusta según lo que necesites */
     letter-spacing: -2px; /* Ajusta si es necesario */
   }
+  
+.textTitle4 {
+  font-size: 23rem; /* Ajusta según lo que necesites */
+  letter-spacing: -2px; /* Ajusta si es necesario */
+}
 }
 @media (max-width: 1515px) {
   .textTitle1 {
@@ -275,6 +303,10 @@ color:  rgb(203, 69, 12);
     letter-spacing: -2px; /* Ajusta si es necesario */
   }
   .textTitle3 {
+    font-size: 11rem; /* Ajusta según lo que necesites */
+    letter-spacing: -2px; /* Ajusta si es necesario */
+  }
+  .textTitle4 {
     font-size: 11rem; /* Ajusta según lo que necesites */
     letter-spacing: -2px; /* Ajusta si es necesario */
   }
@@ -305,6 +337,9 @@ color:  rgb(203, 69, 12);
    font-size: 1rem;
   }
 
+  .project{
+    padding: 20px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -319,5 +354,9 @@ color:  rgb(203, 69, 12);
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .textTitle4 {
+    font-size: 7rem; /* Ajusta según lo que necesites */
+    letter-spacing: -2px; /* Ajusta si es necesario */
   }
 }

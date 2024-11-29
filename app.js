@@ -79,6 +79,24 @@ gsap.to(".textTitle1", {
         }
       );
       
+      gsap.fromTo(
+        ".textTitle4",
+        {
+          opacity: 0, // Inicialmente invisible
+          y: 100, // Posición desplazada hacia abajo
+        },
+        {
+          opacity: 1, // Visible
+          y: 0, // Posición original
+          duration: 1,
+          scrollTrigger: {
+            trigger: "#Seccion5",
+            start: "top center",
+            end: "bottom",
+            toggleActions: "play pause play reverse",
+          }
+        }
+      );
       const container = document.querySelector('.scroll_logos');
       const images = gsap.utils.toArray('.scroll_logos img');
       
@@ -96,3 +114,5 @@ gsap.to(".textTitle1", {
         }
 
       });
+
+   
